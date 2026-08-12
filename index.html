@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay's Stickery Studio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8fc;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffd6e7;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 3px solid #f3aac8;
+        }
+
+        h1 {
+            margin: 0;
+            color: #d94f88;
+            font-size: 38px;
+        }
+
+        header p {
+            margin-bottom: 0;
+            color: #70485b;
+        }
+
+        nav {
+            background-color: white;
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav a {
+            color: #d94f88;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .welcome {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .welcome h2 {
+            color: #d94f88;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product {
+            background-color: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .sticker {
+            width: 100%;
+            height: 180px;
+            background-color: #ffe8f1;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .sticker img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .product h3 {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .price {
+            color: #d94f88;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: white;
+            margin-top: 40px;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #f1dce5;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #d94f88;
+        }
+
+        section img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
+            background-color: #ffd6e7;
+            text-align: center;
+            padding: 18px;
+            color: #70485b;
+        }
+
+        @media (max-width: 800px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Jay's Stickery Studio 🧩</h1>
+        <p>Cute and colorful stickers made to brighten up your day!</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#stickers">Stickers</a>
+        <a href="#owner">About Me</a>
+    </nav>
+
+    <main>
+
+        <div class="welcome">
+            <h2>Welcome to my little sticker shop!</h2>
+            <p>Find some fun stickers for your notebooks, laptops, journals, and more.</p>
+        </div>
+
+        <div class="products" id="stickers">
+
+            <div class="product">
+                <div class="sticker">
+                    <img src="./images/anime.jpg" alt="Anime stickers">
+                </div>
+                <h3>Anime Stickers</h3>
+                <p class="price">₱25</p>
+            </div>
+
+            <div class="product">
+                <div class="sticker">
+                    <img src="./images/marvels.jpeg" alt="Marvel stickers">
+                </div>
+                <h3>Marvel Stickers</h3>
+                <p class="price">₱30</p>
+            </div>
+
+            <div class="product">
+                <div class="sticker">
+                    <img src="./images/animals.jpg" alt="Animal stickers">
+                </div>
+                <h3>Animal Stickers</h3>
+                <p class="price">₱20</p>
+            </div>
+
+        </div>
+
+        <section id="owner">
+            <h2>About the Owner</h2>
+
+            <p>
+                Hi! I'm Jay Mella, the owner of Jay's Stickery Studio.
+                I enjoy making cute and creative sticker designs that people
+                can use to decorate their everyday things.
+            </p>
+
+            <img src="./images/me.jpg" alt="Photo of Jay">
+        </section>
+
+    </main>
+
+    <footer>
+        
+        <p>© 2026 Jay's Stickery Studio 🩷</p>
+    </footer>
+
+</body>
+</html>
