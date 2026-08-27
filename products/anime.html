@@ -49,6 +49,10 @@
             font-weight: bold;
         }
 
+        nav a:hover {
+            color: #b83d70;
+        }
+
         main {
             max-width: 800px;
             margin: 30px auto;
@@ -99,6 +103,101 @@
             width: 35%;
         }
 
+        /* Order Enquiry Sticker Bubble */
+
+        .order-box {
+            margin-top: 30px;
+            background-color: #fff0f6;
+            border: 3px solid #f3aac8;
+            border-radius: 30px;
+            padding: 25px;
+            box-shadow: 0 5px 0 #e8a0bb;
+        }
+
+        .order-box h2 {
+            display: inline-block;
+            background-color: #f3aac8;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 25px;
+            margin-top: 0;
+        }
+
+        .form-bubble {
+            background-color: white;
+            border: 2px solid #ffd0e1;
+            border-radius: 20px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .form-bubble label {
+            color: #5a3d4a;
+            font-weight: bold;
+        }
+
+        input[type="number"],
+        input[type="email"] {
+            margin-top: 8px;
+            padding: 9px;
+            border: 2px solid #f3aac8;
+            border-radius: 15px;
+            background-color: #fff8fc;
+        }
+
+        input[type="number"] {
+            width: 70px;
+        }
+
+        input[type="email"] {
+            width: 90%;
+            max-width: 350px;
+        }
+
+        fieldset {
+            background-color: white;
+            border: 2px solid #ffd0e1;
+            border-radius: 20px;
+            padding: 18px;
+            margin-top: 15px;
+        }
+
+        legend {
+            background-color: #f3aac8;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+
+        .extras {
+            background-color: white;
+            border: 2px solid #ffd0e1;
+            border-radius: 20px;
+            padding: 18px;
+            margin-top: 15px;
+        }
+
+        .extras h3 {
+            color: #d94f88;
+            margin-top: 0;
+        }
+
+        button {
+            background-color: #d94f88;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 18px;
+        }
+
+        button:hover {
+            background-color: #b83d70;
+        }
+
         footer {
             margin-top: 40px;
             background-color: #ffd6e7;
@@ -123,6 +222,7 @@
 </header>
 
 <main>
+
     <div class="product-detail">
 
         <h1>Anime Stickers</h1>
@@ -134,7 +234,9 @@
         <h2>Description</h2>
 
         <p>
-           These stickers were inspired by my interest in anime and the creativity behind its characters. I wanted to create stickers that anime fans can use to show their interests and personality.
+            These stickers were inspired by my interest in anime and the
+            creativity behind its characters. I wanted to create stickers
+            that anime fans can use to show their interests and personality.
         </p>
 
         <h2>Specifications</h2>
@@ -186,8 +288,154 @@
             </tr>
         </table>
 
+
+        <!-- ORDER ENQUIRY FORM -->
+
+        <div class="order-box">
+
+            <h2>Order Enquiry</h2>
+
+            <form>
+
+                <div class="form-bubble">
+
+                    <label for="anime-quantity">
+                        Quantity:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="number"
+                        id="anime-quantity"
+                        name="quantity"
+                        min="1"
+                        max="20"
+                        required
+                    >
+
+                </div>
+
+
+                <fieldset>
+
+                    <legend>Delivery Method</legend>
+
+                    <input
+                        type="radio"
+                        id="anime-regular"
+                        name="delivery"
+                        value="regular"
+                        required
+                    >
+
+                    <label for="anime-regular">
+                        Same-Day Delivery
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="anime-express"
+                        name="delivery"
+                        value="express"
+                    >
+
+                    <label for="anime-express">
+                        Express Delivery
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="anime-pickup"
+                        name="delivery"
+                        value="pickup"
+                    >
+
+                    <label for="anime-pickup">
+                        Store Pickup
+                    </label>
+
+                </fieldset>
+
+
+                <div class="extras">
+
+                    <h3>Optional Extras</h3>
+
+                    <input
+                        type="checkbox"
+                        id="anime-gift"
+                        name="extras"
+                        value="gift-wrapping"
+                    >
+
+                    <label for="anime-gift">
+                        Gift Wrapping
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="anime-handling"
+                        name="extras"
+                        value="express-handling"
+                    >
+
+                    <label for="anime-handling">
+                        Express Handling
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="anime-note"
+                        name="extras"
+                        value="gift-note"
+                    >
+
+                    <label for="anime-note">
+                        Gift Note
+                    </label>
+
+                </div>
+
+
+                <div class="form-bubble">
+
+                    <label for="anime-email">
+                        Contact Email:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="email"
+                        id="anime-email"
+                        name="email"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit">
+                    Send Order Enquiry
+                </button>
+
+            </form>
+
+        </div>
+
     </div>
+
 </main>
+
 
 <footer>
     <p>© 2026 Jay's Stickery Studio 🩷</p>
