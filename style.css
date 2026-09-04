@@ -1,0 +1,259 @@
+/*1. VARIABLES */
+
+:root {
+    --brand-color: #d94f88;
+    --dark-ink: #333333;
+    --muted-grey: #777777;
+    --light-background: #fff8fc;
+
+    --header-background: #ffd6e7;
+    --border-color: #f3aac8;
+    --soft-pink: #fff0f6;
+    --light-pink: #ffe8f1;
+}
+
+
+/*2. BASE STYLES*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: var(--light-background);
+    color: var(--dark-ink);
+}
+
+
+/*3. LAYOUT REGIONS*/
+
+header {
+    background-color: var(--header-background);
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid var(--border-color);
+}
+
+header h1 {
+    margin: 0;
+    color: var(--brand-color);
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav a {
+    color: var(--brand-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b83d70;
+}
+
+
+/* Main */
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+    background-color: var(--header-background);
+    text-align: center;
+    padding: 18px;
+}
+
+
+/* ========================================
+   4. COMPONENTS
+   ======================================== */
+
+
+/* Product Detail */
+
+.product-detail {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+
+/* Product Image */
+
+.product-image {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+    margin: 20px auto;
+    background-color: var(--light-pink);
+    border-radius: 10px;
+}
+
+
+/* Headings */
+
+h2 {
+    color: var(--brand-color);
+}
+
+
+/* Product Specifications Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--header-background);
+    width: 35%;
+}
+
+
+/* Order Enquiry Sticker Bubble */
+
+.order-box {
+    margin-top: 30px;
+    background-color: var(--soft-pink);
+    border: 3px solid var(--border-color);
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: 0 5px 0 #e8a0bb;
+}
+
+.order-box h2 {
+    display: inline-block;
+    background-color: var(--border-color);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    margin-top: 0;
+}
+
+
+/* Form Bubble */
+
+.form-bubble {
+    background-color: white;
+    border: 2px solid #ffd0e1;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.form-bubble label {
+    color: #5a3d4a;
+    font-weight: bold;
+}
+
+
+/* Form Inputs */
+
+input[type="number"],
+input[type="email"] {
+    margin-top: 8px;
+    padding: 9px;
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    background-color: var(--light-background);
+}
+
+input[type="number"] {
+    width: 70px;
+}
+
+input[type="email"] {
+    width: 90%;
+    max-width: 350px;
+}
+
+
+/* Delivery Method */
+
+fieldset {
+    background-color: white;
+    border: 2px solid #ffd0e1;
+    border-radius: 20px;
+    padding: 18px;
+    margin-top: 15px;
+}
+
+legend {
+    background-color: var(--border-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+
+/* Optional Extras */
+
+.extras {
+    background-color: white;
+    border: 2px solid #ffd0e1;
+    border-radius: 20px;
+    padding: 18px;
+    margin-top: 15px;
+}
+
+.extras h3 {
+    color: var(--brand-color);
+    margin-top: 0;
+}
+
+
+/* Submit Button */
+
+button {
+    background-color: var(--brand-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+button:hover {
+    background-color: #b83d70;
+}
