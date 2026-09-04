@@ -40,6 +40,12 @@ header {
 header h1 {
     margin: 0;
     color: var(--brand-color);
+    font-size: 38px;
+}
+
+header p {
+    margin-bottom: 15px;
+    color: #70485b;
 }
 
 
@@ -77,7 +83,7 @@ nav a:hover {
 /* Main */
 
 main {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 30px auto;
     padding: 0 20px;
 }
@@ -90,6 +96,7 @@ footer {
     background-color: var(--header-background);
     text-align: center;
     padding: 18px;
+    color: #70485b;
 }
 
 
@@ -98,10 +105,92 @@ footer {
    ======================================== */
 
 
+/* HOME / INDEX PAGE */
+
+
+/* Welcome Section */
+
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    color: var(--brand-color);
+}
+
+
+/* Product Grid */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* Product Cards */
+
+.product {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+
+/* Sticker Image Area */
+
+.sticker {
+    width: 100%;
+    height: 180px;
+    background-color: var(--light-pink);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+
+/* Sticker Images */
+
+.sticker img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Product Name */
+
+.product h3 {
+    margin: 8px 0;
+    color: #555;
+}
+
+
+/* Product Price */
+
+.price {
+    color: var(--brand-color);
+    font-weight: bold;
+}
+
+
+/* Product View Details Link */
+
+.product a {
+    color: #551a8b;
+}
+
+
 /* Product Detail */
 
 .product-detail {
-    background-color: white;
+    background-color: rgb(240, 236, 237);
     padding: 25px;
     border-radius: 12px;
 }
@@ -256,4 +345,224 @@ button {
 
 button:hover {
     background-color: #b83d70;
+}
+
+
+/* ========================================
+   5. CONTACT PAGE
+   ======================================== */
+
+
+/* Main Contact Card */
+
+main section {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #f1dce5;
+    box-shadow: 0 4px 12px rgba(217, 79, 136, 0.08);
+}
+
+
+/* Contact Heading */
+
+main section h2 {
+    color: var(--brand-color);
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+
+/* Contact Description */
+
+main section > p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* Contact Information */
+
+main section > ul {
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+
+/* Contact Form Bubble */
+
+main section form fieldset {
+    background-color: var(--soft-pink);
+    border: 3px solid var(--border-color);
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 25px;
+    box-shadow: 5px 5px 0 var(--border-color);
+}
+
+
+/* Your Details Bubble */
+
+main section form legend {
+    margin: 0 auto;
+    padding: 8px 20px;
+    background-color: #ffb6d2;
+    border: 3px solid white;
+    border-radius: 25px;
+    color: #a83d68;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(217, 79, 136, 0.2);
+}
+
+
+/* Contact Labels */
+
+main section form label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    color: #70485b;
+    font-weight: bold;
+}
+
+
+/* Contact Inputs */
+
+main section form input[type="text"],
+main section form input[type="email"],
+main section form select,
+main section form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: white;
+}
+
+
+/* Contact Input Focus */
+
+main section form input:focus,
+main section form select:focus,
+main section form textarea:focus {
+    outline: 2px solid var(--brand-color);
+    border-color: var(--brand-color);
+}
+
+
+/* Contact Message Box */
+
+main section form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+
+/* Contact Submit Button */
+
+main section form button {
+    display: block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: var(--brand-color);
+    color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 var(--border-color);
+}
+
+
+main section form button:hover {
+    background-color: #b83d70;
+}
+
+
+/* ========================================
+   6. RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 800px) {
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    main section {
+        padding: 20px;
+    }
+
+    main section form fieldset {
+        padding: 20px;
+    }
+
+}
+
+/* ========================================
+   8. ABOUT PAGE
+   ======================================== */
+
+
+/* About Card */
+
+main section {
+    background-color: white;
+    padding: 45px 40px;
+    border-radius: 12px;
+    border: 1px solid #f1dce5;
+    text-align: center;
+}
+
+
+/* About Heading */
+
+main section h2 {
+    color: var(--brand-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+/* About Text */
+
+main section p {
+    line-height: 1.6;
+    margin: 15px auto;
+    max-width: 750px;
+}
+
+
+/* About Photo */
+
+main section img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 15px;
 }
