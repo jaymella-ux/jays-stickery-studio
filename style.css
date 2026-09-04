@@ -1,4 +1,4 @@
-/*1. VARIABLES */
+/* 1. VARIABLES */
 
 :root {
     --brand-color: #d94f88;
@@ -13,7 +13,7 @@
 }
 
 
-/*2. BASE STYLES*/
+/* 2. BASE STYLES */
 
 * {
     box-sizing: border-box;
@@ -28,7 +28,7 @@ body {
 }
 
 
-/*3. LAYOUT REGIONS*/
+/* 3. LAYOUT REGIONS */
 
 header {
     background-color: var(--header-background);
@@ -131,12 +131,23 @@ footer {
 
 /* Product Cards */
 
-.product {
+.product-card {
     background-color: white;
-    padding: 15px;
+    padding: 16px;
     border-radius: 12px;
+    border-left: 5px solid var(--brand-color);
+    margin-bottom: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     text-align: center;
+}
+
+
+/* Product Name */
+
+.product-card h3 {
+    margin: 8px 0;
+    font-size: 22px;
+    color: var(--dark-ink);
 }
 
 
@@ -164,14 +175,6 @@ footer {
 }
 
 
-/* Product Name */
-
-.product h3 {
-    margin: 8px 0;
-    color: #555;
-}
-
-
 /* Product Price */
 
 .price {
@@ -182,7 +185,7 @@ footer {
 
 /* Product View Details Link */
 
-.product a {
+.product-card a {
     color: #551a8b;
 }
 
@@ -454,7 +457,8 @@ main section form textarea {
 main section form input:focus,
 main section form select:focus,
 main section form textarea:focus {
-    outline: 2px solid var(--brand-color);
+    outline: 3px solid var(--brand-color);
+    outline-offset: 2px;
     border-color: var(--brand-color);
 }
 
@@ -475,7 +479,7 @@ main section form button {
     padding: 12px 25px;
     background-color: var(--brand-color);
     color: white;
-    border: 3px solid white;
+    border: none;
     border-radius: 20px;
     font-size: 16px;
     font-weight: bold;
@@ -522,8 +526,9 @@ main section form button:hover {
 
 }
 
+
 /* ========================================
-   8. ABOUT PAGE
+   7. ABOUT PAGE
    ======================================== */
 
 
