@@ -135,7 +135,7 @@ footer {
     background-color: white;
     padding: 16px;
     border-radius: 12px;
-    border-left: 5px solid var(--brand-color);
+    border: 2px solid var(--border-color);
     margin-bottom: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     text-align: center;
@@ -486,7 +486,6 @@ main section form button {
     cursor: pointer;
     box-shadow: 3px 3px 0 var(--border-color);
 }
-
 
 main section form button:hover {
     background-color: #b83d70;
