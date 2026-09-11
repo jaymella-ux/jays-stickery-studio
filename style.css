@@ -179,18 +179,20 @@ footer {
 
 /* Product Grid */
 
-.products {
-    display: grid;
+.product-grid {
+    display: flex;
 
-    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
 
-    gap: 25px;
+    gap: 24px;
 }
 
 
 /* Product Cards */
 
 .product {
+    flex: 1 1 240px;
+
     background-color: white;
 
     padding: 18px;
@@ -214,10 +216,15 @@ footer {
     display: flex;
 
     flex-direction: column;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+
+/* Product Hover */
+
 .product:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.02);
 
     box-shadow: 0 8px 16px rgba(217, 79, 136, 0.18);
 }
@@ -790,52 +797,4 @@ main section img {
     border: 5px solid var(--border-color);
 
     box-shadow: 3px 3px 0 var(--brand-color);
-}
-
-
-/* 8. RESPONSIVE DESIGN */
-
-@media (max-width: 800px) {
-
-    .products {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-@media (max-width: 550px) {
-
-    .products {
-        grid-template-columns: 1fr;
-    }
-
-    .product {
-        min-height: auto;
-    }
-
-    header {
-        flex-direction: column;
-
-        gap: 15px;
-
-        text-align: center;
-    }
-
-    header h1 {
-        font-size: 30px;
-    }
-
-    nav ul {
-        gap: 15px;
-    }
-
-    main section {
-        padding: 20px;
-    }
-
-    main section form fieldset {
-        padding: 20px;
-    }
-
 }
