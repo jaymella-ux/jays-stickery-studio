@@ -1,246 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Animal Stickers | Jay's Stickery Studio</title>
-    
+
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Jay's Stickery Studio 🧩</h1>
+    <div class="page">
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+        <!-- Header -->
 
-<main>
+        <header>
 
-    <div class="product-detail">
+            <h1>Jay's Stickery Studio 🧩</h1>
 
-        <h1>Animal Stickers</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <img src="../images/animals.jpg"
-             alt="Animal sticker designs"
-             class="product-image">
-
-        <h2>Description</h2>
-
-        <p>
-            Animals can make people feel happy and relaxed, which is why I
-            wanted to include them in my sticker collection. I was inspired
-            by how animals can have different personalities and expressions.
-        </p>
-
-        <h2>Specifications</h2>
-
-        <table>
-            <tr>
-                <th>Material</th>
-                <td>Waterproof Vinyl</td>
-            </tr>
-
-            <tr>
-                <th>Size</th>
-                <td>Customizable</td>
-            </tr>
-
-            <tr>
-                <th>Finish</th>
-                <td>Glossy</td>
-            </tr>
-
-            <tr>
-                <th>Type</th>
-                <td>Die-Cut</td>
-            </tr>
-
-            <tr>
-                <th>Printing</th>
-                <td>Full-Color Inkjet</td>
-            </tr>
-
-            <tr>
-                <th>Waterproof</th>
-                <td>Yes</td>
-            </tr>
-
-            <tr>
-                <th>Quantity</th>
-                <td>1 piece</td>
-            </tr>
-
-            <tr>
-                <th>Best For</th>
-                <td>Laptops, notebooks, journals, and phone cases</td>
-            </tr>
-
-            <tr>
-                <th>Price</th>
-                <td>₱20.00</td>
-            </tr>
-        </table>
+        </header>
 
 
-        <!-- ORDER ENQUIRY FORM -->
+        <!-- Sidebar -->
 
-        <div class="order-box">
+        <aside>
 
-            <h2>Order Enquiry</h2>
+            <h2>Shop Categories</h2>
 
-            <form>
+            <ul>
+                <li>Anime Stickers</li>
+                <li>Marvel Stickers</li>
+                <li>Animal Stickers</li>
+            </ul>
 
-                <div class="form-bubble">
+            <h3>Why Shop With Us?</h3>
 
-                    <label for="animal-quantity">
-                        Quantity:
-                    </label>
+            <p>
+                Cute and colorful stickers made to add
+                creativity and joy to your everyday items.
+            </p>
 
-                    <br>
+        </aside>
 
-                    <input
-                        type="number"
-                        id="animal-quantity"
-                        name="quantity"
-                        min="1"
-                        max="20"
-                        required
-                    >
+
+        <!-- Main Content -->
+
+        <main>
+
+            <div class="product-detail">
+
+                <h1>Animal Stickers</h1>
+
+                <img
+                    src="../images/animals.jpg"
+                    alt="Animal sticker designs"
+                    class="product-image"
+                >
+
+                <h2>Description</h2>
+
+                <p>
+                    Animals can make people feel happy and relaxed, which is why I
+                    wanted to include them in my sticker collection. I was inspired
+                    by how animals can have different personalities and expressions.
+                </p>
+
+                <h2>Specifications</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Material</th>
+                        <td>Waterproof Vinyl</td>
+                    </tr>
+
+                    <tr>
+                        <th>Size</th>
+                        <td>Customizable</td>
+                    </tr>
+
+                    <tr>
+                        <th>Finish</th>
+                        <td>Glossy</td>
+                    </tr>
+
+                    <tr>
+                        <th>Type</th>
+                        <td>Die-Cut</td>
+                    </tr>
+
+                    <tr>
+                        <th>Printing</th>
+                        <td>Full-Color Inkjet</td>
+                    </tr>
+
+                    <tr>
+                        <th>Waterproof</th>
+                        <td>Yes</td>
+                    </tr>
+
+                    <tr>
+                        <th>Quantity</th>
+                        <td>1 piece</td>
+                    </tr>
+
+                    <tr>
+                        <th>Best For</th>
+                        <td>Laptops, notebooks, journals, and phone cases</td>
+                    </tr>
+
+                    <tr>
+                        <th>Price</th>
+                        <td>₱20.00</td>
+                    </tr>
+
+                </table>
+
+
+                <!-- Order Enquiry Form -->
+
+                <div class="order-box">
+
+                    <h2>Order Enquiry</h2>
+
+                    <form>
+
+                        <div class="form-bubble">
+
+                            <label for="animal-quantity">
+                                Quantity:
+                            </label>
+
+                            <br>
+
+                            <input
+                                type="number"
+                                id="animal-quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                required
+                            >
+
+                        </div>
+
+
+                        <fieldset>
+
+                            <legend>Delivery Method</legend>
+
+                            <input
+                                type="radio"
+                                id="animal-regular"
+                                name="delivery"
+                                value="regular"
+                                required
+                            >
+
+                            <label for="animal-regular">
+                                Same-Day Delivery
+                            </label>
+
+                            <br>
+
+                            <input
+                                type="radio"
+                                id="animal-express"
+                                name="delivery"
+                                value="express"
+                            >
+
+                            <label for="animal-express">
+                                Express Delivery
+                            </label>
+
+                            <br>
+
+                            <input
+                                type="radio"
+                                id="animal-pickup"
+                                name="delivery"
+                                value="pickup"
+                            >
+
+                            <label for="animal-pickup">
+                                Store Pickup
+                            </label>
+
+                        </fieldset>
+
+
+                        <div class="extras">
+
+                            <h3>Optional Extras</h3>
+
+                            <input
+                                type="checkbox"
+                                id="animal-gift"
+                                name="extras"
+                                value="gift-wrapping"
+                            >
+
+                            <label for="animal-gift">
+                                Gift Wrapping
+                            </label>
+
+                            <br>
+
+                            <input
+                                type="checkbox"
+                                id="animal-handling"
+                                name="extras"
+                                value="express-handling"
+                            >
+
+                            <label for="animal-handling">
+                                Express Handling
+                            </label>
+
+                            <br>
+
+                            <input
+                                type="checkbox"
+                                id="animal-note"
+                                name="extras"
+                                value="gift-note"
+                            >
+
+                            <label for="animal-note">
+                                Gift Note
+                            </label>
+
+                        </div>
+
+
+                        <div class="form-bubble">
+
+                            <label for="animal-email">
+                                Contact Email:
+                            </label>
+
+                            <br>
+
+                            <input
+                                type="email"
+                                id="animal-email"
+                                name="email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <button type="submit">
+                            Send Order Enquiry
+                        </button>
+
+                    </form>
 
                 </div>
 
+            </div>
 
-                <fieldset>
-
-                    <legend>Delivery Method</legend>
-
-                    <input
-                        type="radio"
-                        id="animal-regular"
-                        name="delivery"
-                        value="regular"
-                        required
-                    >
-
-                    <label for="animal-regular">
-                        Same-Day Delivery
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="radio"
-                        id="animal-express"
-                        name="delivery"
-                        value="express"
-                    >
-
-                    <label for="animal-express">
-                        Express Delivery
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="radio"
-                        id="animal-pickup"
-                        name="delivery"
-                        value="pickup"
-                    >
-
-                    <label for="animal-pickup">
-                        Store Pickup
-                    </label>
-
-                </fieldset>
+        </main>
 
 
-                <div class="extras">
+        <!-- Footer -->
 
-                    <h3>Optional Extras</h3>
+        <footer>
 
-                    <input
-                        type="checkbox"
-                        id="animal-gift"
-                        name="extras"
-                        value="gift-wrapping"
-                    >
+            <p>© 2026 Jay's Stickery Studio 🩷</p>
 
-                    <label for="animal-gift">
-                        Gift Wrapping
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="checkbox"
-                        id="animal-handling"
-                        name="extras"
-                        value="express-handling"
-                    >
-
-                    <label for="animal-handling">
-                        Express Handling
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="checkbox"
-                        id="animal-note"
-                        name="extras"
-                        value="gift-note"
-                    >
-
-                    <label for="animal-note">
-                        Gift Note
-                    </label>
-
-                </div>
-
-
-                <div class="form-bubble">
-
-                    <label for="animal-email">
-                        Contact Email:
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="email"
-                        id="animal-email"
-                        name="email"
-                        required
-                    >
-
-                </div>
-
-
-                <button type="submit">
-                    Send Order Enquiry
-                </button>
-
-            </form>
-
-        </div>
+        </footer>
 
     </div>
 
-</main>
-
-
-<footer>
-    <p>© 2026 Jay's Stickery Studio 🩷</p>
-</footer>
-
 </body>
+
 </html>

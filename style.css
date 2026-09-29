@@ -120,7 +120,75 @@ footer {
 }
 
 
-/* 4. HOME PAGE */
+/* 4. PAGE GRID */
+
+.page {
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    grid-template-areas:
+        "masthead masthead"
+        "side main"
+        "foot foot";
+
+    gap: 16px;
+}
+
+.page header {
+    grid-area: masthead;
+}
+
+.page aside {
+    grid-area: side;
+}
+
+.page main {
+    grid-area: main;
+
+    max-width: none;
+
+    margin: 0;
+
+    padding: 30px 20px;
+}
+
+.page footer {
+    grid-area: foot;
+}
+
+
+/* Sidebar */
+
+.page aside {
+    background-color: var(--soft-pink);
+
+    border: 2px solid var(--border-color);
+
+    border-left: 6px solid var(--brand-color);
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    box-shadow: 4px 4px 0 var(--border-color);
+}
+
+.page aside h2,
+.page aside h3 {
+    color: var(--brand-color);
+}
+
+.page aside ul {
+    padding-left: 20px;
+}
+
+.page aside li {
+    margin-bottom: 10px;
+}
+
+
+/* 5. HOME PAGE */
 
 
 /* Welcome */
@@ -315,7 +383,7 @@ footer {
 }
 
 
-/* 5. PRODUCT DETAIL */
+/* 6. PRODUCT DETAIL */
 
 
 /* Product Detail */
@@ -532,7 +600,7 @@ button:hover {
 }
 
 
-/* 6. CONTACT PAGE */
+/* 7. CONTACT PAGE */
 
 
 /* Contact Card */
@@ -737,7 +805,7 @@ main section form button:hover {
 }
 
 
-/* 7. ABOUT PAGE */
+/* 8. ABOUT PAGE */
 
 
 /* About Card */

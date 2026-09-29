@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Anime Stickers | Jay's Stickery Studio</title>
 
     <link rel="stylesheet" href="../style.css">
@@ -10,237 +12,279 @@
 
 <body>
 
-<header>
-    <h1>Jay's Stickery Studio 🧩</h1>
+    <div class="page">
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+        <!-- Header -->
 
-<main>
+        <header>
 
-    <div class="product-detail">
+            <h1>Jay's Stickery Studio 🧩</h1>
 
-        <h1>Anime Stickers</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <img src="../images/anime.jpg"
-             alt="Anime sticker designs"
-             class="product-image">
-
-        <h2>Description</h2>
-
-        <p>
-            These stickers were inspired by my interest in anime and the
-            creativity behind its characters. I wanted to create stickers
-            that anime fans can use to show their interests and personality.
-        </p>
-
-        <h2>Specifications</h2>
-
-        <table>
-            <tr>
-                <th>Material</th>
-                <td>Waterproof Vinyl</td>
-            </tr>
-
-            <tr>
-                <th>Size</th>
-                <td>Customizable</td>
-            </tr>
-
-            <tr>
-                <th>Finish</th>
-                <td>Glossy</td>
-            </tr>
-
-            <tr>
-                <th>Type</th>
-                <td>Die-Cut</td>
-            </tr>
-
-            <tr>
-                <th>Printing</th>
-                <td>Full-Color Inkjet</td>
-            </tr>
-
-            <tr>
-                <th>Waterproof</th>
-                <td>Yes</td>
-            </tr>
-
-            <tr>
-                <th>Quantity</th>
-                <td>1 piece</td>
-            </tr>
-
-            <tr>
-                <th>Best For</th>
-                <td>Laptops, notebooks, journals, and phone cases</td>
-            </tr>
-
-            <tr>
-                <th>Price</th>
-                <td>₱25.00 per piece</td>
-            </tr>
-        </table>
+        </header>
 
 
-        <!-- ORDER ENQUIRY FORM -->
+        <!-- Sidebar -->
 
-        <div class="order-box">
+        <aside>
 
-            <h2>Order Enquiry</h2>
+            <h2>Shop Categories</h2>
 
-            <form>
+            <ul>
+                <li>Anime Stickers</li>
+                <li>Marvel Stickers</li>
+                <li>Animal Stickers</li>
+            </ul>
 
-                <div class="form-bubble">
+            <h3>Why Shop With Us?</h3>
 
-                    <label for="anime-quantity">
-                        Quantity:
-                    </label>
+            <p>
+                Cute and colorful stickers made to add
+                creativity and joy to your everyday items.
+            </p>
 
-                    <br>
+        </aside>
 
-                    <input
-                        type="number"
-                        id="anime-quantity"
-                        name="quantity"
-                        min="1"
-                        max="20"
-                        required
-                    >
+
+        <!-- Main Content -->
+
+        <main>
+
+            <div class="product-detail">
+
+                <h1>Anime Stickers</h1>
+
+                <img
+                    src="../images/anime.jpg"
+                    alt="Anime sticker designs"
+                    class="product-image"
+                >
+
+                <h2>Description</h2>
+
+                <p>
+                    These stickers were inspired by my interest in anime and the
+                    creativity behind its characters. I wanted to create stickers
+                    that anime fans can use to show their interests and personality.
+                </p>
+
+                <h2>Specifications</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Material</th>
+                        <td>Waterproof Vinyl</td>
+                    </tr>
+
+                    <tr>
+                        <th>Size</th>
+                        <td>Customizable</td>
+                    </tr>
+
+                    <tr>
+                        <th>Finish</th>
+                        <td>Glossy</td>
+                    </tr>
+
+                    <tr>
+                        <th>Type</th>
+                        <td>Die-Cut</td>
+                    </tr>
+
+                    <tr>
+                        <th>Printing</th>
+                        <td>Full-Color Inkjet</td>
+                    </tr>
+
+                    <tr>
+                        <th>Waterproof</th>
+                        <td>Yes</td>
+                    </tr>
+
+                    <tr>
+                        <th>Quantity</th>
+                        <td>1 piece</td>
+                    </tr>
+
+                    <tr>
+                        <th>Best For</th>
+                        <td>Laptops, notebooks, journals, and phone cases</td>
+                    </tr>
+
+                    <tr>
+                        <th>Price</th>
+                        <td>₱25.00 per piece</td>
+                    </tr>
+
+                </table>
+
+
+                <!-- Order Enquiry Form -->
+
+                <div class="order-box">
+
+                    <h2>Order Enquiry</h2>
+
+                    <form>
+
+                        <div class="form-bubble">
+
+                            <label for="anime-quantity">
+                                Quantity:
+                            </label>
+
+                            <br>
+
+                            <input
+                                type="number"
+                                id="anime-quantity"
+                                name="quantity"
+                                min="1"
+                                max="20"
+                                required
+                            >
+
+                        </div>
+
+
+                        <fieldset>
+
+                            <legend>Delivery Method</legend>
+
+                            <input
+                                type="radio"
+                                id="anime-regular"
+                                name="delivery"
+                                value="regular"
+                                required
+                            >
+
+                            <label for="anime-regular">
+                                Same-Day Delivery
+                            </label>
+
+                            <br>
+
+                            <input
+                                type="radio"
+                                id="anime-express"
+                                name="delivery"
+                                value="express"
+                            >
+
+                            <label for="anime-express">
+                                Express Delivery
+                            </label>
+
+                            <br>
+
+                            <input
+                                type="radio"
+                                id="anime-pickup"
+                                name="delivery"
+                                value="pickup"
+                            >
+
+                            <label for="anime-pickup">
+                                Store Pickup
+                            </label>
+
+                        </fieldset>
+
+
+                        <div class="extras">
+
+                            <h3>Optional Extras</h3>
+
+                            <input
+                                type="checkbox"
+                                id="anime-gift"
+                                name="extras"
+                                value="gift-wrapping"
+                            >
+
+                            <label for="anime-gift">
+                                Gift Wrapping
+                            </label>
+
+                            <br>
+
+                            <input
+                                type="checkbox"
+                                id="anime-handling"
+                                name="extras"
+                                value="express-handling"
+                            >
+
+                            <label for="anime-handling">
+                                Express Handling
+                            </label>
+
+                            <br>
+
+                            <input
+                                type="checkbox"
+                                id="anime-note"
+                                name="extras"
+                                value="gift-note"
+                            >
+
+                            <label for="anime-note">
+                                Gift Note
+                            </label>
+
+                        </div>
+
+
+                        <div class="form-bubble">
+
+                            <label for="anime-email">
+                                Contact Email:
+                            </label>
+
+                            <br>
+
+                            <input
+                                type="email"
+                                id="anime-email"
+                                name="email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <button type="submit">
+                            Send Order Enquiry
+                        </button>
+
+                    </form>
 
                 </div>
 
+            </div>
 
-                <fieldset>
-
-                    <legend>Delivery Method</legend>
-
-                    <input
-                        type="radio"
-                        id="anime-regular"
-                        name="delivery"
-                        value="regular"
-                        required
-                    >
-
-                    <label for="anime-regular">
-                        Same-Day Delivery
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="radio"
-                        id="anime-express"
-                        name="delivery"
-                        value="express"
-                    >
-
-                    <label for="anime-express">
-                        Express Delivery
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="radio"
-                        id="anime-pickup"
-                        name="delivery"
-                        value="pickup"
-                    >
-
-                    <label for="anime-pickup">
-                        Store Pickup
-                    </label>
-
-                </fieldset>
+        </main>
 
 
-                <div class="extras">
+        <!-- Footer -->
 
-                    <h3>Optional Extras</h3>
+        <footer>
 
-                    <input
-                        type="checkbox"
-                        id="anime-gift"
-                        name="extras"
-                        value="gift-wrapping"
-                    >
+            <p>© 2026 Jay's Stickery Studio 🩷</p>
 
-                    <label for="anime-gift">
-                        Gift Wrapping
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="checkbox"
-                        id="anime-handling"
-                        name="extras"
-                        value="express-handling"
-                    >
-
-                    <label for="anime-handling">
-                        Express Handling
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="checkbox"
-                        id="anime-note"
-                        name="extras"
-                        value="gift-note"
-                    >
-
-                    <label for="anime-note">
-                        Gift Note
-                    </label>
-
-                </div>
-
-
-                <div class="form-bubble">
-
-                    <label for="anime-email">
-                        Contact Email:
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="email"
-                        id="anime-email"
-                        name="email"
-                        required
-                    >
-
-                </div>
-
-
-                <button type="submit">
-                    Send Order Enquiry
-                </button>
-
-            </form>
-
-        </div>
+        </footer>
 
     </div>
 
-</main>
-
-
-<footer>
-    <p>© 2026 Jay's Stickery Studio 🩷</p>
-</footer>
-
 </body>
+
 </html>
