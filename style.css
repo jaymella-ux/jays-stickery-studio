@@ -27,17 +27,43 @@ body {
     color: var(--dark-ink);
 }
 
+.page {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "masthead"
+        "main"
+        "side"
+        "foot";
+
+    gap: 16px;
+
+    min-height: 100vh;
+}
+
 
 /* 3. HEADER */
 
 header {
+    grid-area: masthead;
+
     display: flex;
-    justify-content: space-between;
+
+    flex-direction: column;
+
+    justify-content: center;
+
     align-items: center;
+
+    text-align: center;
+
+    gap: 20px;
 
     background-color: var(--header-background);
 
-    padding: 25px;
+    padding: 25px 15px;
 
     border-bottom: 3px solid var(--border-color);
 
@@ -49,7 +75,7 @@ header h1 {
 
     color: var(--brand-color);
 
-    font-size: 38px;
+    font-size: 34px;
 }
 
 
@@ -63,12 +89,18 @@ nav {
     border-radius: 20px;
 
     box-shadow: 3px 3px 0 var(--border-color);
+
+    max-width: 100%;
 }
 
 nav ul {
     display: flex;
 
-    gap: 20px;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
 
     list-style: none;
 
@@ -94,73 +126,30 @@ nav a:hover {
 }
 
 
-/* Main */
+/* 4. MAIN */
 
 main {
-    max-width: 1100px;
-
-    margin: 30px auto;
-
-    padding: 0 20px;
-}
-
-
-/* Footer */
-
-footer {
-    margin-top: 40px;
-
-    background-color: var(--header-background);
-
-    text-align: center;
-
-    padding: 18px;
-
-    color: #70485b;
-}
-
-
-/* 4. PAGE GRID */
-
-.page {
-    display: grid;
-
-    grid-template-columns: 220px 1fr;
-
-    grid-template-areas:
-        "masthead masthead"
-        "side main"
-        "foot foot";
-
-    gap: 16px;
-}
-
-.page header {
-    grid-area: masthead;
-}
-
-.page aside {
-    grid-area: side;
-}
-
-.page main {
     grid-area: main;
 
-    max-width: none;
+    width: 100%;
 
-    margin: 0;
+    max-width: 1100px;
 
-    padding: 30px 20px;
-}
+    margin: 0 auto;
 
-.page footer {
-    grid-area: foot;
+    padding: 20px;
 }
 
 
 /* Sidebar */
 
 .page aside {
+    grid-area: side;
+
+    width: auto;
+
+    margin: 0 20px 20px;
+
     background-color: var(--soft-pink);
 
     border: 2px solid var(--border-color);
@@ -172,6 +161,8 @@ footer {
     padding: 20px;
 
     box-shadow: 4px 4px 0 var(--border-color);
+
+    min-width: 0;
 }
 
 .page aside h2,
@@ -194,7 +185,7 @@ footer {
 /* Welcome */
 
 .welcome {
-    height: 200px;
+    min-height: 200px;
 
     display: flex;
 
@@ -213,6 +204,8 @@ footer {
     border-radius: 25px;
 
     margin-bottom: 30px;
+
+    padding: 20px;
 
     box-shadow: 4px 4px 0 var(--border-color);
 }
@@ -253,6 +246,8 @@ footer {
     flex-wrap: wrap;
 
     gap: 24px;
+
+    width: 100%;
 }
 
 
@@ -260,6 +255,8 @@ footer {
 
 .product {
     flex: 1 1 240px;
+
+    min-width: 0;
 
     background-color: white;
 
@@ -325,6 +322,8 @@ footer {
 
 .product .sticker img {
     width: 100%;
+
+    max-width: 100%;
 
     height: 100%;
 
@@ -394,6 +393,10 @@ footer {
     padding: 25px;
 
     border-radius: 12px;
+
+    width: 100%;
+
+    min-width: 0;
 }
 
 
@@ -463,6 +466,8 @@ th {
     padding: 25px;
 
     box-shadow: 0 5px 0 #e8a0bb;
+
+    width: 100%;
 }
 
 .order-box h2 {
@@ -492,6 +497,8 @@ th {
     padding: 15px;
 
     margin-top: 15px;
+
+    width: 100%;
 }
 
 .form-bubble label {
@@ -514,6 +521,8 @@ input[type="email"] {
     border-radius: 15px;
 
     background-color: var(--light-background);
+
+    max-width: 100%;
 }
 
 input[type="number"] {
@@ -539,6 +548,8 @@ fieldset {
     padding: 18px;
 
     margin-top: 15px;
+
+    max-width: 100%;
 }
 
 legend {
@@ -566,6 +577,8 @@ legend {
     padding: 18px;
 
     margin-top: 15px;
+
+    max-width: 100%;
 }
 
 .extras h3 {
@@ -606,13 +619,15 @@ button:hover {
 /* Contact Card */
 
 main section {
+    width: 100%;
+
     max-width: 800px;
 
-    margin: 30px auto;
+    margin: 20px auto;
 
     background-color: white;
 
-    padding: 30px;
+    padding: 25px 20px;
 
     border-radius: 20px;
 
@@ -621,6 +636,8 @@ main section {
     box-shadow: 5px 5px 0 var(--border-color);
 
     text-align: center;
+
+    min-width: 0;
 }
 
 
@@ -665,6 +682,8 @@ main section > ul {
 
 main section form {
     text-align: left;
+
+    width: 100%;
 }
 
 main section form fieldset {
@@ -674,11 +693,13 @@ main section form fieldset {
 
     border-radius: 25px;
 
-    padding: 30px;
+    padding: 20px;
 
     margin-top: 25px;
 
     box-shadow: 5px 5px 0 var(--border-color);
+
+    width: 100%;
 }
 
 
@@ -733,6 +754,8 @@ main section form textarea {
     display: block;
 
     width: 100%;
+
+    max-width: 100%;
 
     padding: 12px;
 
@@ -813,7 +836,7 @@ main section form button:hover {
 main section {
     background-color: white;
 
-    padding: 45px 40px;
+    padding: 30px 20px;
 
     border-radius: 20px;
 
@@ -856,6 +879,8 @@ main section img {
 
     height: 150px;
 
+    max-width: 100%;
+
     object-fit: cover;
 
     border-radius: 50%;
@@ -865,4 +890,102 @@ main section img {
     border: 5px solid var(--border-color);
 
     box-shadow: 3px 3px 0 var(--brand-color);
+}
+
+
+/* 9. FOOTER */
+
+footer {
+    grid-area: foot;
+
+    margin-top: 40px;
+
+    background-color: var(--header-background);
+
+    border-top: 3px solid var(--border-color);
+
+    text-align: center;
+
+    padding: 18px;
+
+    color: #70485b;
+
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* 10. TABLET AND DESKTOP */
+
+/* Enhance the layout at 700px and above */
+
+@media (min-width: 700px) {
+
+    .page {
+        grid-template-columns: 220px 1fr;
+
+        grid-template-areas:
+            "masthead masthead"
+            "side main"
+            "foot foot";
+    }
+
+
+    /* Header */
+
+    header {
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        text-align: left;
+
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 38px;
+    }
+
+
+    /* Navigation */
+
+    nav ul {
+        gap: 20px;
+    }
+
+
+    /* Main */
+
+    main {
+        padding: 30px 20px;
+    }
+
+
+    /* Sidebar */
+
+    .page aside {
+        margin: 0;
+
+        margin-left: 20px;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* Contact and About */
+
+    main section {
+        padding: 45px 40px;
+    }
+
+
+    main section form fieldset {
+        padding: 30px;
+    }
 }
