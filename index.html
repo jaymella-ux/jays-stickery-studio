@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +17,7 @@
 
         <header>
 
-            <h1>Jay's Stickery Studio 🧩</h1>
+            <h1 id="shop-name">Jay's Stickery Studio 🧩</h1>
 
             <nav>
                 <ul>
@@ -44,13 +45,16 @@
             <h3>Shop With Us!</h3>
 
             <p>
-                We are a small sticker shop that makes a high quality and affordable sticker for your favorite items
+                We are a small sticker shop that makes high-quality
+                and affordable stickers for your favorite items.
             </p>
 
         </aside>
 
 
         <main>
+
+            <!-- Welcome -->
 
             <div class="welcome">
 
@@ -62,6 +66,14 @@
                 </p>
 
             </div>
+
+
+            <!-- Product Count -->
+
+            <p>
+                Products available:
+                <span id="product-count">0</span>
+            </p>
 
 
             <!-- Product Grid -->
@@ -140,13 +152,20 @@
         </main>
 
 
+        <!-- Footer -->
+
         <footer>
 
-            <p>© 2026 Jay's Stickery Studio 🩷</p>
+            <p id="copyright"></p>
 
         </footer>
 
     </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
 
